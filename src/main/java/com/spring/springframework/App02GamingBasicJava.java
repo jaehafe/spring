@@ -20,6 +20,14 @@ public class App02GamingBasicJava {
 
         System.out.println(context.getBean("person"));
 
-        System.out.println(context.getBean("address"));
+        System.out.println("person2MethodCall>>" + " " + context.getBean("person2MethodCall"));
+
+        System.out.println("person3Parameters>>" + " " + context.getBean("person3Parameters"));
+
+        System.out.println(context.getBean("address2"));
+
+//        System.out.println(context.getBean(Address.class));
+
+
     }
 }
