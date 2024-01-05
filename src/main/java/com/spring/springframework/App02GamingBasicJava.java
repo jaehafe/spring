@@ -4,6 +4,8 @@ import com.spring.springframework.game.GameRunner;
 import com.spring.springframework.game.PacmanGame;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Arrays;
+
 public class App02GamingBasicJava {
     public static void main(String[] args) {
         //1. launch a Spring Context
@@ -26,8 +28,14 @@ public class App02GamingBasicJava {
 
         System.out.println(context.getBean("address2"));
 
-//        System.out.println(context.getBean(Address.class));
+        System.out.println(context.getBean(Person.class));
 
+        System.out.println(context.getBean(Address.class));
 
+        System.out.println(context.getBean("person5Qualifier"));
+
+        System.out.println("----");
+//        Arrays.stream(context.getBeanDefinitionNames())
+//                .forEach((System.out::println));
     }
 }
